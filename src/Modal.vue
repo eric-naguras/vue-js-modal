@@ -310,7 +310,7 @@ export default {
 
       return {
         left: inRange(0, maxLeft, left),
-        top: inRange(0, maxTop, top)
+        top: 0 //inRange(0, maxTop, top)
       }
     },
     /**
@@ -370,7 +370,7 @@ export default {
      */
     modalStyle () {
       return {
-        top: this.position.top + 'px',
+        top: 0, // this.position.top + 'px',
         left: this.position.left + 'px',
         width: this.trueModalWidth + 'px',
         height: this.isAutoHeight ? 'auto' : this.trueModalHeight + 'px'
