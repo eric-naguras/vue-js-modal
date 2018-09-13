@@ -36,7 +36,7 @@ import parseNumber from './parser'
 export default {
   name: 'VueJsModal',
   props: {
-    top: {
+    modaltop: {
       required: false,
       type: Number,
       default: 0
@@ -315,7 +315,7 @@ export default {
 
       return {
         left: inRange(0, maxLeft, left),
-        top: this.top //inRange(0, maxTop, top)
+        top: this.modaltop //inRange(0, maxTop, top)
       }
     },
     /**
@@ -375,7 +375,7 @@ export default {
      */
     modalStyle () {
       return {
-        top: this.top, // this.position.top + 'px',
+        top: this.modaltop, // this.position.top + 'px',
         left: this.position.left + 'px',
         width: this.trueModalWidth + 'px',
         height: this.isAutoHeight ? 'auto' : this.trueModalHeight + 'px'
