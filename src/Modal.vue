@@ -375,7 +375,7 @@ export default {
      */
     modalStyle () {
       return {
-        top: top, // this.position.top + 'px',
+        top: this.top, // this.position.top + 'px',
         left: this.position.left + 'px',
         width: this.trueModalWidth + 'px',
         height: this.isAutoHeight ? 'auto' : this.trueModalHeight + 'px'
