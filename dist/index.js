@@ -302,6 +302,11 @@
         exports.default = {
             name: "VueJsModal",
             props: {
+                top: {
+                    required: !1,
+                    type: Number,
+                    default: 0
+                },
                 name: {
                     required: !0,
                     type: String
@@ -500,9 +505,9 @@
                 modalClass: function() {
                     return [ "v--modal-box", this.classes ];
                 },
-              modalStyle: function() {
+                modalStyle: function() {
                     return {
-                        top: 0,
+                        top: this.top,
                         left: this.position.left + "px",
                         width: this.trueModalWidth + "px",
                         height: this.isAutoHeight ? "auto" : this.trueModalHeight + "px"
