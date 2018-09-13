@@ -435,7 +435,7 @@
                 position: function() {
                     var window = this.window, shift = this.shift, pivotX = this.pivotX, pivotY = this.pivotY, trueModalWidth = this.trueModalWidth, trueModalHeight = this.trueModalHeight, maxLeft = window.width - trueModalWidth, maxTop = window.height - trueModalHeight, left = shift.left + pivotX * maxLeft;
                     shift.top;
-                    return {
+                    return console.log("Modaltop:", this.modaltop), {
                         left: (0, _util.inRange)(0, maxLeft, left),
                         top: this.modaltop
                     };
@@ -460,7 +460,7 @@
                     return [ "v--modal-box", this.classes ];
                 },
                 modalStyle: function() {
-                    return {
+                    return console.log("Modaltop:", this.modaltop), {
                         top: this.modaltop,
                         left: this.position.left + "px",
                         width: this.trueModalWidth + "px",

@@ -312,7 +312,7 @@ export default {
 
       const left = shift.left + pivotX * maxLeft
       const top = shift.top + pivotY * maxTop
-
+      console.log('Modaltop:', this.modaltop)
       return {
         left: inRange(0, maxLeft, left),
         top: this.modaltop //inRange(0, maxTop, top)
@@ -374,6 +374,7 @@ export default {
      * CSS styles for position and size of the modal
      */
     modalStyle () {
+      console.log('Modaltop:', this.modaltop)
       return {
         top: this.modaltop, // this.position.top + 'px',
         left: this.position.left + 'px',
