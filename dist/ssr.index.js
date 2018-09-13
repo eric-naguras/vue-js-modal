@@ -256,7 +256,7 @@
         exports.default = {
             name: "VueJsModal",
             props: {
-                top: {
+                modaltop: {
                     required: !1,
                     type: Number,
                     default: 0
@@ -437,7 +437,7 @@
                     shift.top;
                     return {
                         left: (0, _util.inRange)(0, maxLeft, left),
-                        top: this.top
+                        top: this.modaltop
                     };
                 },
                 trueModalWidth: function() {
@@ -461,7 +461,7 @@
                 },
                 modalStyle: function() {
                     return {
-                        top: this.top,
+                        top: this.modaltop,
                         left: this.position.left + "px",
                         width: this.trueModalWidth + "px",
                         height: this.isAutoHeight ? "auto" : this.trueModalHeight + "px"
