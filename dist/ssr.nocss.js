@@ -374,7 +374,7 @@
                     shift.top;
                     return {
                         left: (0, _util.inRange)(0, maxLeft, left),
-                        top: 0
+                        top: this.top
                     };
                 },
                 trueModalWidth: function() {

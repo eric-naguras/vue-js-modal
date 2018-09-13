@@ -315,7 +315,7 @@ export default {
 
       return {
         left: inRange(0, maxLeft, left),
-        top: 0 //inRange(0, maxTop, top)
+        top: this.top //inRange(0, maxTop, top)
       }
     },
     /**
