@@ -500,7 +500,7 @@
                 modalClass: function() {
                     return [ "v--modal-box", this.classes ];
                 },
-                modalStyle: function() {
+              modalStyle: function() {
                     return {
                         top: 0,
                         left: this.position.left + "px",
